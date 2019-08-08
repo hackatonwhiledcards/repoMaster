@@ -38,8 +38,8 @@ h1, h2 {
 h1 {
     padding-top: 20px;
     font-size: 70px;
-    color: #afeb4f; 
-    mix-blend-mode: hard-light;
+    color: rgb(157, 247, 97);; 
+    mix-blend-mode: difference;
     text-align: center;
 }
 

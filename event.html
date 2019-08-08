@@ -14,36 +14,34 @@
         <div align="center" class="container" id="event-name">
             <h2>Application header</h2>
         </div>
-        <div class="container" id="contents">
-            
+        <div class="container">
             <div id="event-name-number-guests">
                 <table class="table">
                     <thead class="thead-dark" id="event-name">
                         <tr>
-                            <th>Event name (auto feeded)</th>
-                            <th>Number of guests (auto feeded)</th>
+                            <th>$$Event name$$</th>
+                            <th>$$Number of guests$$</th>
                         </tr>
                     </thead>
                 </table>
             </div>
-
-            <div id="add-shopping-items">
-                <form class="form-inline">
-                    <div class="form-row">
-                        <div class="col-md-12 mb-9">
-                                <label for="validationCustom01">Notes</label>
-                                <input type="text" class="form-control" id="notes" placeholder="Notes">
+        </div>
+        <div class="container">
+                <form id="add-shopping-items">
+                    <div class="form-row col-md-12">
+                        <div class="col">
+                            <input id="notesInput" type="text" class="form-control" placeholder="Notes">
                         </div>
-                        <div class="col-md-4 mb-3">
-                            <label for="validationCustom01">Add item</label>
-                            <input type="text" class="form-control" id="add-item" placeholder="Add item" required>
+                    </div>
+                    <div class="form-row col-md-12">
+                        <div class="col">
+                            <input id="addItem" type="text" class="form-control" placeholder="Add item" required>
                         </div>
-                        <div class="col-md-4 mb-3">
-                            <label for="validationCustom02">Price</label>
-                            <input type="text" class="form-control" id="price" placeholder="Price" required>
-                        </div>
-                        <div id="button-add-role" class="col-md-4 mb-3">
-                            <button type="button" class="btn btn-primary" id="add-role" onclick="">Add</button>
+                        <div class="col">
+                                <input id="addPrice" type="text" class="form-control" placeholder="Add price" required>
+                            </div>
+                        <div class="col">
+                            <button type="addRoleButton" id="add-role-btn" class="btn btn-primary">&nbsp; &nbsp; Add &nbsp; &nbsp; </button>
                         </div>
                     </div>
                 </form>
@@ -53,25 +51,14 @@
                 <table class="table">
                     <thead class="thead-dark">
                     <tr>
-                        <th>Item</th>
-                        <th>Quantities</th>
-                        <th>Price €</th>
-                        <th>Cumulative value €</th>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>View notes</th>
+                        <th>View list</th>
                     </tr>
                     </thead>
                     <tbody id="shopping-list-items">
-                        <tr>
-                            <td>Chips</td>
-                            <td>3</td>
-                            <td>(3x2) 6</td>
-                            <td>6</td>
-                        </tr>
-                        <tr>
-                            <td>Beer</td>
-                            <td>4</td>
-                            <td>(4x2) 8</td>
-                            <td>14</td>
-                        </tr>
+
                     </tbody>
                 </table>
             </div>

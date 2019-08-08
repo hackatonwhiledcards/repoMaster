@@ -2,19 +2,76 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <title>Event</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    
+    <p></p>
     <div class="container" id="event-name">
         <h1>Application header</h1>
     </div>
     <div class="container" id="contents">
         
+        <div id="event-name-number-guests">
+            <table class="table">
+                <thead class="thead-dark" id="event-name">
+                    <tr>
+                        <th>Event name (auto feeded)</th>
+                        <th>Number of guests (auto feeded)</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+        <div id="add-shopping-items">
+            <form class="form-inline">
+                <div class="form-row">
+                    <div class="col-md-12 mb-9">
+                            <label for="validationCustom01">Notes</label>
+                            <input type="text" class="form-control" id="notes" placeholder="Notes">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="validationCustom01">Add item</label>
+                        <input type="text" class="form-control" id="add-item" placeholder="Add item" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="validationCustom02">Price</label>
+                        <input type="text" class="form-control" id="price" placeholder="Price" required>
+                    </div>
+                    <div id="button-add-role" class="col-md-4 mb-3">
+                        <button type="button" class="btn btn-primary" id="add-role" onclick="">Add</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="shopping-list">
+            <table class="table">
+                <thead class="thead-dark">
+                <tr>
+                    <th>Item</th>
+                    <th>Quantities</th>
+                    <th>Price €</th>
+                    <th>Cumulative value €</th>
+                </tr>
+                </thead>
+                <tbody id="shopping-list-items">
+                    <tr>
+                        <td>Chips</td>
+                        <td>3</td>
+                        <td>(3x2) 6</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Beer</td>
+                        <td>4</td>
+                        <td>(4x2) 8</td>
+                        <td>14</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </body>
 </html>

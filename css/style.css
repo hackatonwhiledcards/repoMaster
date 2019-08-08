@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Lacquer|Roboto&display=swap');
+
+#container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-content: center;
+}
+
+div{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-content: center;
+}
+
+h1 {
+    font-family: 'Lacquer', sans-serif;
+}

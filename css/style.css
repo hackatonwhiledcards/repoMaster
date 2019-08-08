@@ -3,7 +3,6 @@
 
 #border {
     background-color:rgb(241, 236, 245);
-    /**border-image-slice: 0 400px 0 400px;*/
     outline-color: rgb(235, 219, 250);
     outline-width: 5px 5px 5px 5px;
     border-image-outset: 5px 5px 5px 5px;
@@ -11,7 +10,7 @@
 }
 
 #top {
-    /**background-image: url('../images/banner.jpg');*/
+    background-image: url('../images/banner.jpg');
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -38,17 +37,25 @@ h1, h2 {
 h1 {
     padding-top: 20px;
     font-size: 70px;
-    color: rgb(157, 247, 97);; 
-    mix-blend-mode: difference;
+    color: rgb(237, 245, 233); 
+    /**mix-blend-mode: difference;*/
     text-align: center;
 }
 
 h2 {
     font-size: 40px;
+    text-align: center
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     background-image: url(../images/banner.jpg);
     background-repeat: repeat;
+}
+
+table {
+    border-collapse:separate;
+    border:solid black 1px;
+    border-radius:6px;
+    -moz-border-radius:6px;
 }

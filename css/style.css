@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Chettan|Roboto&display=swap');
 
+
 #border {
-    border-image: url('../images/banner.jpg');
+    background-color:rgb(241, 236, 245);
     /**border-image-slice: 0 400px 0 400px;*/
-    border-image-repeat:repeat;
-    outline-color: rgb(64, 23, 103);
+    outline-color: rgb(235, 219, 250);
     outline-width: 5px 5px 5px 5px;
     border-image-outset: 5px 5px 5px 5px;
     outline-style: solid;
 }
 
 #top {
-    background-image: url('../images/banner.jpg');
+    /**background-image: url('../images/banner.jpg');*/
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -49,4 +49,6 @@ h2 {
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-image: url(../images/banner.jpg);
+    background-repeat: repeat;
 }

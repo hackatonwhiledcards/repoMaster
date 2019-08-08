@@ -1,63 +1,44 @@
-
-
 $(document).ready(function(){
-
-    wire();
+    fetchroles();
+    console.log(event)
     $(document).on('click','#add-role-btn', function(){
+        
         addRole();
     })
     
-    fetchroles();
     
-    
-
 });
-
-function wire(){
-     guilherme = {id: 'guilherme'};
-     filipe = {id: 'filipe'};
-     ricardo = {id: 'ricardo'};
-     maria = {id: 'maria'};
-     felipe = {id: 'felipe'};
-
-     userArray = [guilherme, filipe, ricardo, maria, felipe];
-
-     rolelistArray= [{user: guilherme, role: "batata"}];
-
-     event = {id: 1, rolelist: rolelistArray};
-
-}
 function fetchroles(){
-    var rolestable = $('#role-table');
+    var listtoiterate = JSON.parse(window.localStorage.getItem('event'));
+    listtoiterate.rolelist.forEach(function (element) {
+    
+ 
+    });
+}
+function addRole(){
+    
+        var name = $('#userNameInput').val();
+        var roleValue = $('#roleNameInput').val();
+        /*userArray.forEach(element => {
+        if( name === element.id ){|*/
+          var rolestable = $('#role-table');
     var row;
-
-    event.rolelist.forEach(function (element) {
-
+    
          row =  "<tr>" +
-        "<td>" + element.role +"</td>" +
-        "<td>" + element.user.id + "</td>" +
+        "<td>" + roleValue +"</td>" +
+        "<td>" + name+ "</td>" +
         "</tr>";
  
         $(row).appendTo(rolestable);
- 
-    });
-}
-
-
-function addRole(){
-
-    userArray.forEach(element => {
-
-        var name = $('#userNameInput').val();
-        var roleValue = $('#roleNameInput').val();
-
-        if( name === element.id ){
-        console.log("hey")
-            var obj = {user: element, role: roleValue};
-            console.log(rolelistArray);
-            event[1].rolelist.push(obj);
+            /*var obj = {user: element, role: roleValue};
+            console.log(obj);
+            var addtoevent = JSON.parse(window.localStorage.getItem('event'));
+            event.rolelist.push(obj);
+            window.localStorage.removeItem('event')
+            window.localStorage.setItem('event', JSON.stringify(addtoevent))
+            console.log(event.rolelist);     */     
         }
-    });
+   // });
     
-//window.location.reload();
-}
+    //window.location.reload();
+//}

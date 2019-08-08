@@ -1,20 +1,69 @@
-@import url('https://fonts.googleapis.com/css?family=Lacquer|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan|Roboto&display=swap');
+
+
+#border {
+    background-color:rgb(241, 236, 245);
+    outline-color: rgb(235, 219, 250);
+    outline-width: 5px 5px 5px 5px;
+    border-image-outset: 5px 5px 5px 5px;
+    outline-style: solid;
+}
+
+#top {
+    background-image: url('../images/banner.jpg');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:200px;
+}
 
 #container {
     padding-top: 20px;
     padding-bottom: 20px;
     align-content: center;
+    transform: translate(-50%, -50%);
 }
 
-div{
+div {
     padding-top: 20px;
     padding-bottom: 20px;
     align-content: center;
 }
 
+h1, h2 {
+    font-family: 'Baloo Chettan', sans-serif;
+}
+
 h1 {
+<<<<<<< HEAD
     font-family: 'Lacquer', sans-serif;
 }
 
 
 
+=======
+    padding-top: 20px;
+    font-size: 70px;
+    color: rgb(237, 245, 233); 
+    /**mix-blend-mode: difference;*/
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../images/banner.jpg);
+    background-repeat: repeat;
+}
+
+table {
+    border-collapse:separate;
+    border:solid black 1px;
+    border-radius:6px;
+    -moz-border-radius:6px;
+}
+>>>>>>> d162e5869d9dae755b0042df1c503496532a755b

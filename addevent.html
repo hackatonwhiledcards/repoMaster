@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en">
 
 <head>
@@ -90,8 +91,78 @@
             <button type="button" class="btn btn-primary" id="add-role" onclick="">Add</button>
           </div>
         </form>
+=======
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Party without bullshit</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="javascript.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container" id="border">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+      <div class="container" id="top" background-image="images/banner.jpg">
+          <h1>Party without bullshit</h1>
+      </div>
+      <div align="center" class="container" id="event-name">
+          <h2>Create new event</h2>
+      </div>
+      <div class="container">
+          <form id="event-info">
+              <div class="form-row col-md-12">
+                  <div class="col">
+                      <label>Event name</label>
+                      <input id="eventName" type="text" class="form-control" placeholder="Name" required>
+                  </div>
+                  <div class="col">
+                      <label>Event location</label>
+                      <input id="eventLocation" type="text" class="form-control" placeholder="Place" required>
+                  </div>
+                  <div class="col">
+                      <label>Number of guests</label>
+                      <input id="guestsnumber" type="text" class="form-control" placeholder="Number" required>
+                  </div>
+              </div>
+          </form>
+        </div>
+      <div class="container">
+        <table id="role-table" class="table col-md-11 table-sm table-dark" align="center">
+            <thead>
+                <tr>
+                <th scope="col"class="text-center">Role</th>
+                <th scope="col"class="text-center">Name</th>
+                </tr>
+            </thead>
+            <tbody id="roleTableBody">
+            </tbody>
+        </table>
     </div>
-
-    <button type="button" class="btn btn-primary" id="add-event" onclick="">Submit</button>
+      <div class="container">
+          <form id="add-role">
+              <div class="form-row col-md-12">
+                  <div class="col">
+                      <input id="roleNameInput" type="text" class="form-control" placeholder="Role name" required>
+                  </div>
+                  <div class="col">
+                      <input id="userNameInput" type="text" class="form-control" placeholder="User name" required>
+                  </div>
+                  <div class="col">
+                      <button type="button" id="add-role-btn" class="btn btn-primary">&nbsp; &nbsp; Create event &nbsp; &nbsp; </button>
+                  </div>
+              </div>
+          </form>
+        </div>
+>>>>>>> d162e5869d9dae755b0042df1c503496532a755b
+    </div>
 </body>
 </html>

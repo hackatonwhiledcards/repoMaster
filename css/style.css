@@ -1,17 +1,52 @@
-@import url('https://fonts.googleapis.com/css?family=Lacquer|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan|Roboto&display=swap');
+
+#border {
+    border-image: url('../images/banner.jpg');
+    /**border-image-slice: 0 400px 0 400px;*/
+    border-image-repeat:repeat;
+    outline-color: rgb(64, 23, 103);
+    outline-width: 5px 5px 5px 5px;
+    border-image-outset: 5px 5px 5px 5px;
+    outline-style: solid;
+}
+
+#top {
+    background-image: url('../images/banner.jpg');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:200px;
+}
 
 #container {
     padding-top: 20px;
     padding-bottom: 20px;
     align-content: center;
+    transform: translate(-50%, -50%);
 }
 
-div{
+div {
     padding-top: 20px;
     padding-bottom: 20px;
     align-content: center;
 }
 
+h1, h2 {
+    font-family: 'Baloo Chettan', sans-serif;
+}
+
 h1 {
-    font-family: 'Lacquer', sans-serif;
+    padding-top: 20px;
+    font-size: 70px;
+    color: #afeb4f; 
+    mix-blend-mode: hard-light;
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
 }

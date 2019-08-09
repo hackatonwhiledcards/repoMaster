@@ -7,11 +7,8 @@ $(document).ready(function(){
         addEvent();
     })
 
-    $(document).on('click','#add-role-btn', function(){
-        
-        addRole();
-    })
-
+    addRole();
+    
     $(document).on('click', '#add-item-btn', function(){
         addItem();
     })
@@ -20,24 +17,26 @@ $(document).ready(function(){
 });
 
  function fetchRoles(){
-    $.ajax({
+     ajax.open('GET', 'http://192.168.248.200:3000/roles', true);
+     ajax.send();
+    /*$.ajax({
         url: 'http://192.168.248.200:3000/roles',
         type: 'GET',
-        data: JSON.parse(response),
         async: true,
-        sucess: function(data){ 
-            populateTable(data);
+        sucess: function(response){ 
+            alert("hey")
+            populateTable(response);
         },
         error: function(){
             console.log('you are dumb');
         }
 
-    })
+    })*/
  }
 
 function populateTable(data){
 
-    var itemtable = $('#role-table');
+    var itemtable = $('#roleTableBody');
     var row;
     data.forEach(function(element){
 
@@ -81,6 +80,9 @@ function addEvent(){
 
 function addRole(){
 
+    $('#add-role-btn').click(function(event){
+        
+
     var role = {
         event: $('#eventName').val(),
         name: $('#roleNameInput').val(),
@@ -92,13 +94,17 @@ function addRole(){
         data: JSON.stringify(role),
         async: true,
         contentType: 'application/json',
-        sucess: function(){ fetchRoles();
+        sucess: function(){ 
+            alert("add")
+
+            fetchRoles();
         },
         error: function(){
             console.log('you are dumb');
         }
 
     })
+});
 }
     
     /*var name = $('#userNameInput').val();

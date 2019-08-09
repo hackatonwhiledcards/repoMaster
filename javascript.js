@@ -15,14 +15,13 @@ $(document).ready(function(){
 });
 
 function fetchRoles(){
-     
+
     $.ajax({
         
         url: 'http://192.168.248.200:3000/roles',
         type: 'GET',
         async: true,
-        sucess: function(response){ 
-            alert("hey");
+        success: function(response){ 
             populateTable(response);
         },
         error: function(){
@@ -32,12 +31,10 @@ function fetchRoles(){
 }
 
 function populateTable(data){
-
     var itemtable = $('#roleTableBody');
     var row;
     data.forEach(function(element){
 
-        alert("hey")
          row =  "<tr>" + 
          "<td>" + element.name +"</td>" +
          "<td>" + element.user + "</td>" +
@@ -60,7 +57,7 @@ function addEvent(){
         data: JSON.stringify(event),
         async: true,
         contentType: 'application/json',
-        sucess: function(){ window.location.reload();
+        success: function(){ window.location.reload();
         },
         error: function(){
             console.log('you are dumb');
@@ -85,15 +82,16 @@ function addRole(){
         name: $('#roleNameInput').val(),
         user: $('#userNameInput').val()
     }
+
     $.ajax({
         url: 'http://192.168.248.200:3000/roles',
         type: 'POST',
         data: JSON.stringify(role),
         async: true,
         contentType: 'application/json',
-        sucess: function(){ 
-            console.log("add sucess")            
-            fetchRoles();
+        success: function(){
+            emptyTable();
+        fetchRoles();
         },
         error: function(){
             console.log('you are dumb');
@@ -102,7 +100,32 @@ function addRole(){
     })
 });
 }
+
+
+        function emptyTable() {
+    $('#roleTableBody').empty();
+ }
     
+        function addItem(){
+
+            var itemTable = $('#shopping-list-items');
+            var row;
+
+            row =  "<tr>" + 
+         "<td>" + 'Filipe' +"</td>" +
+         "<td>" + 'Party Master' + "</td>" +
+         "<td>" + $('#addItem').val() +"</td>" +
+         "<td>" + $('#addPrice').val() + "</td>" +
+         "<td>" + $('#notesInput').val() +"</td>" +
+        "</tr>";
+
+        $(row).appendTo(itemTable);
+        }
+
+
+
+
+
     /*var name = $('#userNameInput').val();
         var roleValue = $('#roleNameInput').val();
 

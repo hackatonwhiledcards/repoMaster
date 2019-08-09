@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Party without bullshit</title>
+    <title>Add Event</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -50,6 +50,7 @@
           <h2>Create new event</h2>
       </div>
       <div class="container">
+            <div class="text-center"> 
           <form id="event-info">
               <div class="form-row col-md-12">
                   <div class="col">
@@ -66,18 +67,21 @@
                   </div>
               </div>
           </form>
+          </div>
         </div>
       <div class="container">
-        <table id="role-table" class="table col-md-11 table-sm table-dark" align="center">
-            <thead>
+          <div class="text-center"> 
+        <table id="role-table"  class="table table-bordered" align="center">
+            <thead class="thead-dark">
                 <tr>
-                <th scope="col"class="text-center">Role</th>
-                <th scope="col"class="text-center">Name</th>
+                <th scope="col"  class="table-info">Role</th>
+                <th scope="col"  class="table-info">Name</th>
                 </tr>
             </thead>
             <tbody id="roleTableBody">
             </tbody>
         </table>
+    </div>
     </div>
       <div class="container">
           <form id="add-role">

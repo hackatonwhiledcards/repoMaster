@@ -78,3 +78,7 @@ a {
 a:hover {
     text-decoration-color: brown;
 }
+
+#blank {
+    background-color: white;
+}

@@ -7,7 +7,10 @@ $(document).ready(function(){
         addEvent();
     })
 
-    addRole();
+    $(document).on('click','#add-role-btn', function(){
+        
+        addRole();
+    })
     
     $(document).on('click', '#add-item-btn', function(){
         addItem();
@@ -17,9 +20,8 @@ $(document).ready(function(){
 });
 
  function fetchRoles(){
-     ajax.open('GET', 'http://192.168.248.200:3000/roles', true);
-     ajax.send();
-    /*$.ajax({
+     
+    $.ajax({
         url: 'http://192.168.248.200:3000/roles',
         type: 'GET',
         async: true,
@@ -31,7 +33,7 @@ $(document).ready(function(){
             console.log('you are dumb');
         }
 
-    })*/
+    })
  }
 
 function populateTable(data){
@@ -76,14 +78,26 @@ function addEvent(){
 
 
 
-
-
 function addRole(){
 
-    $('#add-role-btn').click(function(event){
-        
+    
+        var name = $('#userNameInput').val();
+        var roleValue = $('#roleNameInput').val();
 
-    var role = {
+        var rolestable = $('#roleTableBody');
+        var row;
+    
+         row =  "<tr>" +
+        "<td>" + roleValue +"</td>" +
+        "<td>" + name+ "</td>" +
+        "</tr>";
+ 
+        $(row).appendTo(rolestable);
+       
+        };
+    
+
+    /*var role = {
         event: $('#eventName').val(),
         name: $('#roleNameInput').val(),
         user: $('#userNameInput').val()
@@ -105,22 +119,9 @@ function addRole(){
 
     })
 });
-}
+}*/
     
-    /*var name = $('#userNameInput').val();
-        var roleValue = $('#roleNameInput').val();
-
-          var rolestable = $('#role-table');
-    var row;
     
-         row =  "<tr>" +
-        "<td>" + roleValue +"</td>" +
-        "<td>" + name+ "</td>" +
-        "</tr>";
- 
-        $(row).appendTo(rolestable);
-       
-        }
  
 
     function addItem(){
@@ -142,4 +143,4 @@ function addRole(){
      
             $(row).appendTo(itemtable);
 
-    }*/
+    }

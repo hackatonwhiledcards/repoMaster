@@ -10,6 +10,11 @@
     padding-bottom: 20px;
 }
 
+#menu {
+    float: center;
+    align-content: center;
+}
+
 #top {
     background-image: url('../images/banner.jpg');
 	background-position:center;
@@ -26,11 +31,11 @@
 }
 
 #our-story {
-    background-color: black;
+    background-color: rgb(43, 43, 43);
 }
 
 #our-team {
-    background-color: black;
+    background-color: rgb(43, 43, 43);
 }
 
 div {
@@ -64,7 +69,6 @@ body {
 
 table {
     border-collapse:separate;
-    border:solid black 1px;
     border-radius:6px;
     -moz-border-radius:6px;
 }
@@ -77,6 +81,7 @@ a {
 
 a:hover {
     text-decoration-color: brown;
+    color: brown;
 }
 
 #blank {

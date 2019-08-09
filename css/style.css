@@ -83,3 +83,7 @@ a:hover {
     text-decoration-color: brown;
     color: brown;
 }
+
+#blank {
+    background-color: white;
+}

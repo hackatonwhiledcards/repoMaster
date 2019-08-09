@@ -2,8 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Party without bullshit | Dashboard</title><meta charset="utf-8" />
-    <title>Party without bullshit | My events</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -12,7 +11,7 @@
 </head>
 <body>
   <div class="container" id="menu">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg">
         <img src="images/logo.jpg">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -35,49 +34,49 @@
     </div>
     </nav>
   </div>
-  <div class="container" id="border">
-  <div id="top" background-image="images/banner.jpg">
-      <h1>Party without bullshit</h1>
+    <div class="container" id="border">
+      <div id="top" background-image="images/banner.jpg">
+          <h1>Party without bullshit | Dashboard</h1>
+      </div>
+      <div class="container" id="event-name">
+          <h2>Events Dashboard</h2>
+      </div>
+      <div class="container">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Role</th>
+              <th scope="col">Event</th>
+              <th scope="col">Expenses $</th>
+              <th scope="col">Open Event</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Master</td>
+              <td>Hackathon Party</td>
+              <td>1,000.00</td>
+              <td><button class="btn btn-primary">Details</button></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Food Master</td>
+              <td>Primas barbacue</td>
+              <td>2,000.00</td>
+              <td><button class="btn btn-primary">Details</button></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Beverage Master</td>
+              <td>Fabio Assunsão Party</td>
+              <td>3,000.00</td>
+              <td><button class="btn btn-primary">Details</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
   </div>
-  <div class="container" id="event-name">
-      <h2>Events Dashboard</h2>
-  </div>
-  <div class="container">
-    <table class="table">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Role</th>
-          <th scope="col">Event</th>
-          <th scope="col">Expenses $</th>
-          <th scope="col">Open Event</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Master</td>
-          <td>Hackathon Party</td>
-          <td>1,000.00</td>
-          <td><button class="btn btn-primary">Details</button></td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Food Master</td>
-          <td>Primas barbacue</td>
-          <td>2,000.00</td>
-          <td><button class="btn btn-primary">Details</button></td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Beverage Master</td>
-          <td>Fabio Assunsão Party</td>
-          <td>3,000.00</td>
-          <td><button class="btn btn-primary">Details</button></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
 </body>
 </html>

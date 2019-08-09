@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Party without bullshit | Add event</title>
+    <title>Add Event</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -35,6 +35,13 @@
         </nav>
     </div>
     <div class="container" id="border">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="event.html">Event Manager</a></li>
+          <li class="breadcrumb-item"><a href="dashboard.html">Dashboard</a></li>
+        </ol>
+      </nav>
       <div class="container" id="top" background-image="images/banner.jpg">
           <h1>Party without bullshit</h1>
       </div>
@@ -42,6 +49,7 @@
           <h2>Create new event</h2>
       </div>
       <div class="container">
+            <div class="text-center"> 
           <form id="event-info">
               <div class="form-row col-md-12">
                   <div class="col">
@@ -58,18 +66,21 @@
                   </div>
               </div>
           </form>
+          </div>
         </div>
       <div class="container">
-        <table id="role-table" class="table col-md-11 table-sm table-dark" align="center">
-            <thead>
+          <div class="text-center"> 
+        <table id="role-table"  class="table table-bordered" align="center">
+            <thead class="thead-dark">
                 <tr>
-                <th scope="col"class="text-center">Role</th>
-                <th scope="col"class="text-center">Name</th>
+                <th scope="col"  class="table-info">Role</th>
+                <th scope="col"  class="table-info">Name</th>
                 </tr>
             </thead>
             <tbody id="roleTableBody">
             </tbody>
         </table>
+    </div>
     </div>
       <div class="container">
           <form id="add-role">

@@ -10,26 +10,33 @@
     <script src="javascript.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
-<body id="blank">
-    <nav class="navbar navbar-dark bg-dark">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Our Team</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"></a>
-        </li>
-      </ul>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Our Story</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#team">Our Team</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="login" placeholder="Login" aria-label="Login">
+          <input class="form-control mr-sm-0" type="password" placeholder="Password" aria-label="Password">
+          <button class="btn btn-secondary" type="submit">Login</button>
+        </form>
+      </div>
     </nav>
-    <div class="container" id="border">
-    <div class="container">
+  </div>
+  <div class="container" id="border">
         <div id="top" background-image="images/banner.jpg">
           <h1>Party without bullshit</h1>
       </div>
@@ -37,6 +44,48 @@
       <h3>Leave the bullshit friends and join an efficient way of partying!</h3>
       <img width="900px" src="images/mc.JPG">
     </div>
+    <div id="our-story">
+      <h1>No shit!</h1>
+    </div>
+    <div>
+      <h3>Our Story</h3>
+      <p>After a shitty party we decided to call it a day. And we began thinking of a smart way to plan our next party, where we could easily distribute roles among the organisation team, share ideas, and split expenses.</p>
+      <p></p>
+    </div>
+    <div id="our-story">
+        <h1>Awww shit!</h1>
+    </div>
+    <div>
+    <h3 id="team">Our Team</h3>
+    <p>Yes, shit happpens. But not when you're among the best of people. So, who are we?</p>
+    <table>
+      <tr>
+        <td><h3 text-align="center">
+          <a href=“https://www.linkedin.com/in/ricardo-sousa-alves/” target=“_blank”>Ricardo</a><br />
+          <img src="images/ricardo.jpeg" width="200 px">
+        </h3></td>
+        <td><h3 text-align="center">
+          <a href=“https://www.linkedin.com/in/felipealisboa/” target=“_blank”>Felipe</a><br />
+          <img src="images/felipe.jpeg" width="200 px">
+        </h3></td>
+        <td><h3 text-align="center">
+          <a href=“https://www.linkedin.com/in/guilherme-cgp-goncalves/” target=“_blank”>Filipe</a><br />
+          <img src="images/filipe.jpeg" width="200 px">
+        </h3></td>
+      <td>
+        <h3 text-align="center">
+          <a href=“https://www.linkedin.com/in/guilherme-cgp-goncalves/” target=“_blank”>Guilherme</a><br />
+          <img src="images/guilherme.jpeg" width="200 px">
+        </h3>
+      </td>
+      <td>
+        <h3 text-align="center">
+            <a href=“https://www.linkedin.com/in/madoria/” target=“_blank”>Maria</a><br />
+            <img src="images/maria.jpeg" width="200 px">
+        </h3>
+      </td>
+      </tr>
+    </table>
     </div>
   </div>
 </body>

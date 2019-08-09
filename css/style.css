@@ -44,6 +44,11 @@ div {
     align-content: center;
 }
 
+#body-index {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 h1, h2, h3 {
     font-family: 'Baloo Chettan', sans-serif;
 }
@@ -71,7 +76,13 @@ table {
     border-collapse:separate;
     border-radius:6px;
     -moz-border-radius:6px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+  @media screen and (max-width:900px){
+    th,td { display:block; width:100%; }
+      }
 
 a {
     text-emphasis: none;

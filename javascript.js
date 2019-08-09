@@ -14,6 +14,8 @@ $(document).ready(function(){
     })
 });
 
+    var money = 0;
+
 function fetchRoles(){
 
     $.ajax({
@@ -115,11 +117,21 @@ function addRole(){
          "<td>" + 'Filipe' +"</td>" +
          "<td>" + 'Party Master' + "</td>" +
          "<td>" + $('#addItem').val() +"</td>" +
-         "<td>" + $('#addPrice').val() + "</td>" +
+         "<td>" + $('#addPrice').val() + " €</td>" +
          "<td>" + $('#notesInput').val() +"</td>" +
         "</tr>";
-
         $(row).appendTo(itemTable);
+
+        var tempmoney = parseInt($('#addPrice').val());
+        var anothertempmoney = money + tempmoney;
+        
+        var moneyTable = $('#totalMoney');
+        moneyTable.empty();
+        var moneyRow ='<tr> <td> Total:</td><td>' +  anothertempmoney + '</td> </tr>';
+        $(moneyRow).appendTo(moneyTable);
+
+        money = anothertempmoney;
+
         }
 
 

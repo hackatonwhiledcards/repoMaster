@@ -8,31 +8,28 @@ $(document).ready(function(){
     })
 
     addRole();
-    
+
     $(document).on('click', '#add-item-btn', function(){
         addItem();
     })
-    
-    
 });
 
- function fetchRoles(){
-     ajax.open('GET', 'http://192.168.248.200:3000/roles', true);
-     ajax.send();
-    /*$.ajax({
+function fetchRoles(){
+     
+    $.ajax({
+        
         url: 'http://192.168.248.200:3000/roles',
         type: 'GET',
         async: true,
         sucess: function(response){ 
-            alert("hey")
+            alert("hey");
             populateTable(response);
         },
         error: function(){
             console.log('you are dumb');
         }
-
-    })*/
- }
+    })
+}
 
 function populateTable(data){
 
@@ -95,8 +92,7 @@ function addRole(){
         async: true,
         contentType: 'application/json',
         sucess: function(){ 
-            alert("add")
-
+            console.log("add sucess")            
             fetchRoles();
         },
         error: function(){

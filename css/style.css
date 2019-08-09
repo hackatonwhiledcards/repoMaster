@@ -35,13 +35,6 @@ h1, h2 {
 }
 
 h1 {
-<<<<<<< HEAD
-    font-family: 'Lacquer', sans-serif;
-}
-
-
-
-=======
     padding-top: 20px;
     font-size: 70px;
     color: rgb(237, 245, 233); 
@@ -66,4 +59,8 @@ table {
     border-radius:6px;
     -moz-border-radius:6px;
 }
->>>>>>> d162e5869d9dae755b0042df1c503496532a755b
+
+#blank{
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}

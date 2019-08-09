@@ -2,11 +2,12 @@
 
 
 #border {
-    background-color:rgb(241, 236, 245);
+    background-color:rgb(206, 222, 247);
     outline-color: rgb(235, 219, 250);
     outline-width: 5px 5px 5px 5px;
     border-image-outset: 5px 5px 5px 5px;
     outline-style: solid;
+    padding-bottom: 20px;
 }
 
 #top {
@@ -24,13 +25,21 @@
     transform: translate(-50%, -50%);
 }
 
+#our-story {
+    background-color: black;
+}
+
+#our-team {
+    background-color: black;
+}
+
 div {
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     align-content: center;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Baloo Chettan', sans-serif;
 }
 
@@ -59,3 +68,22 @@ table {
     border-radius:6px;
     -moz-border-radius:6px;
 }
+
+a {
+    text-emphasis: none;
+    text-decoration: underline;
+    color: #000;
+}
+
+a:hover {
+    text-decoration-color: brown;
+}
+
+span.team {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue; 
+    background-color: yellow; 
+  }

@@ -27,7 +27,14 @@
     padding-top: 20px;
     padding-bottom: 20px;
     align-content: center;
-    transform: translate(-50%, -50%);
+}
+
+#our-story {
+    background-color: rgb(43, 43, 43);
+}
+
+#our-team {
+    background-color: rgb(43, 43, 43);
 }
 
 #our-story {
@@ -42,6 +49,11 @@ div {
     padding-top: 20px;
     padding-bottom: 10px;
     align-content: center;
+}
+
+#body-index {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 h1, h2, h3 {
@@ -71,7 +83,13 @@ table {
     border-collapse:separate;
     border-radius:6px;
     -moz-border-radius:6px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+  @media screen and (max-width:900px){
+    th,td { display:block; width:100%; }
+      }
 
 a {
     text-emphasis: none;
@@ -86,4 +104,9 @@ a:hover {
 
 #blank {
     background-color: white;
+}
+
+#NavColorText {
+    background: #000;
+
 }

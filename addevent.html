@@ -35,21 +35,15 @@
         </nav>
     </div>
     <div class="container" id="border">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item"><a href="event.html">Event Manager</a></li>
-          <li class="breadcrumb-item"><a href="dashboard.html">Dashboard</a></li>
-        </ol>
-      </nav>
       <div class="container" id="top" background-image="images/banner.jpg">
           <h1>Party without bullshit</h1>
       </div>
+
       <div align="center" class="container" id="event-name">
           <h2>Create new event</h2>
       </div>
-      <div class="container">
-            <div class="text-center"> 
+
+      <div class="container" id="container">
           <form id="event-info">
               <div class="form-row col-md-12">
                   <div class="col">
@@ -61,49 +55,47 @@
                       <input id="eventLocation" type="text" class="form-control" placeholder="Place" required>
                   </div>
                   <div class="col">
-                      <label>Number of guests</label>
+                      <label>Number of guests</label>   
                       <input id="guestsnumber" type="text" class="form-control" placeholder="Number" required>
                   </div>
-              </div>
-          </form>
-          </div>
-        </div>
-      <div class="container">
-          <div class="text-center"> 
-        <table id="role-table"  class="table table-bordered" align="center">
-            <thead class="thead-dark">
-                <tr>
-                <th scope="col"  class="table-info">Role</th>
-                <th scope="col"  class="table-info">Name</th>
-                </tr>
-            </thead>
-            
-            <tbody id="roleTableBody">
-            </tbody>
-        </table>
-        </div>
-    </div>
-    </div>
-      <div class="container">
-          <div class="text-center">
-          <form id="add-role">
-              <div class="form-row col-md-12">
-                  <div class="col">
-                      <input id="roleNameInput" type="text" class="form-control" placeholder="Role name" required>
-                  </div>
-                  <div class="col">
-                      <input id="userNameInput" type="text" class="form-control" placeholder="User name" required>
-                  </div>
-                  <div class="col">
-                      <button type="button" id="add-role-btn" class="btn btn-primary">&nbsp; &nbsp; Add &nbsp; &nbsp; </button>
-                  </div>
-              </div>
-          </form>
-          </div>
-          <div class="col">
-                <button type="button" id="add-event-btn" class="btn btn-primary">&nbsp; &nbsp; Create Event &nbsp; &nbsp; </button>
-            </div>
+               </div>
+            </form>
+            <form id="add-role">
+                    <div class="form-row col-md-12">
+                        <div class="col">
+                            <label>Role</label>
+                            <input id="roleNameInput" type="text" class="form-control" placeholder="Role name" required>
+                        </div>
+                        <div class="col">
+                            <label>User name</label>
+                            <input id="userNameInput" type="text" class="form-control" placeholder="User name" required>
+                        </div>
+                        <div class="col">
+                            <br />
+                            <button type="button" id="add-role-btn" class="btn btn-primary">&nbsp; &nbsp; Add Role&nbsp; &nbsp; </button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <br />
+                        <button type="button" id="add-event-btn" class="btn btn-primary">&nbsp; &nbsp; Create Event &nbsp; &nbsp; </button>
+                    </div>
+             </form>
+         </div>
+        <div class="container" id="container">
+            <table id="role-table"  class="table table-bordered" align="center">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col" class="table-info">Role</th>
+                        <th scope="col" class="table-info">Name</th>
+                    </tr>
+                </thead>
+                <tbody id="roleTableBody">
+
+                    <!--Persistence-->
+
+                </tbody>
+            </table>
         </div>
     </div>
-</body>
+    </body>
 </html>
